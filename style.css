@@ -31,10 +31,10 @@ main > section button {
     border-radius: 4px;
     color: white;
     font-family: EuclidBold;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: -0.6px;
-    line-height: 20px;
+    line-height: 15px;
     padding: 9px 23px;
     text-transform: uppercase;
 }
@@ -42,6 +42,5 @@ main > section button {
 #detalhes-container {
     font-weight: bold;
     list-style-type: none;
-    height: 30px;
     width: 90%;
 }
