@@ -4,6 +4,16 @@ const nomeDoPersonagem = document.querySelector('#nome');
 const especie = document.querySelector('#especie');
 const condicao = document.querySelector('#status');
 
+traduzirCondicao = (data) => {
+    if(data.status == 'unknown'){
+        return 'Não sabemos';
+    }else if(data.status == 'Alive'){
+        return 'Sim';
+    }else {
+        return 'Não. Está morto';
+    }
+}
+
 gerarValorAletorio = () => {
     return Math.floor(Math.random() * 671);
 }
@@ -21,7 +31,7 @@ pegarPersonagem = () => {
         imagem.alt = data.name;
         nomeDoPersonagem.innerHTML = data.name;
         especie.innerHTML = data.species;
-        condicao.innerHTML = data.status;
+        condicao.innerHTML = traduzirCondicao(data);
     });
 }
 
